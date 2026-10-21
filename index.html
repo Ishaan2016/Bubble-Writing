@@ -3,6 +3,22 @@
 <head> 
 <title> Ishaans New Writing  </title>
 <meta charset="UTF-8">
+   <style>
+      li{
+    color: lightskyblue;
+}
+table {
+    border:2px solid;
+    width: 80%
+}
+td{
+    border: 2px solid;
+    border-collapse: collapse;
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+   </style>
 </head>
 <body>
    
@@ -59,6 +75,7 @@
                      </table>
                      <br><br>
                      <form>
+                        
                         <label>  Day </label>
                         <input type="date">
                         <br><BR>
@@ -76,10 +93,24 @@
                  <option> JST: Japan Standard Time </option>
 <option> AEST: Australian Eastern Standard Time </option>
                         </select>
-                        </form>
+</form>
+    <button onclick="bubbleOrder()">Order</button>
+    
                      <h3> When Created : - 7/17/2026, July 17, 2026</h3>
                       
                      <h5> This webpage was created by Ishaan Praveen </h5>
              </center>
+             <script>
+                function bubbleOrder(){
+                    let name = prompt("Please Enter Your Name");
+
+                    if(name){
+                        alert(`Welcome ${name}, please order a bubble wriring piece that is custom. Order Now!!!`);
+                    }
+                    else{
+                        alert("Please write your name");
+                    }
+                }
+                </script>
                      </body>
 </html>
